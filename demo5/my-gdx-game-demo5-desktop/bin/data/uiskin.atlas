@@ -1,0 +1,281 @@
+
+uiskin.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+libgdx
+  rotate: false
+  xy: 1, 295
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+button
+  rotate: false
+  xy: 1, 182
+  size: 433, 111
+  orig: 433, 111
+  offset: 0, 0
+  index: -1
+animation
+  rotate: false
+  xy: 515, 551
+  size: 128, 256
+  orig: 128, 256
+  offset: 0, 0
+  index: -1
+default
+  rotate: false
+  xy: 1, 103
+  size: 254, 77
+  orig: 254, 77
+  offset: 0, 0
+  index: -1
+button-down
+  rotate: false
+  xy: 515, 496
+  size: 125, 53
+  orig: 125, 53
+  offset: 0, 0
+  index: -1
+button-up
+  rotate: false
+  xy: 645, 754
+  size: 125, 53
+  orig: 125, 53
+  offset: 0, 0
+  index: -1
+arrow_down_down
+  rotate: false
+  xy: 436, 249
+  size: 44, 44
+  orig: 44, 44
+  offset: 0, 0
+  index: -1
+arrow_down_up
+  rotate: false
+  xy: 1, 57
+  size: 44, 44
+  orig: 44, 44
+  offset: 0, 0
+  index: -1
+arrow_left_down
+  rotate: false
+  xy: 257, 136
+  size: 44, 44
+  orig: 44, 44
+  offset: 0, 0
+  index: -1
+arrow_left_up
+  rotate: false
+  xy: 515, 450
+  size: 44, 44
+  orig: 44, 44
+  offset: 0, 0
+  index: -1
+arrow_right_down
+  rotate: false
+  xy: 645, 708
+  size: 44, 44
+  orig: 44, 44
+  offset: 0, 0
+  index: -1
+arrow_right_up
+  rotate: false
+  xy: 772, 763
+  size: 44, 44
+  orig: 44, 44
+  offset: 0, 0
+  index: -1
+arrow_up_down
+  rotate: false
+  xy: 436, 203
+  size: 44, 44
+  orig: 44, 44
+  offset: 0, 0
+  index: -1
+arrow_up_up
+  rotate: false
+  xy: 1, 11
+  size: 44, 44
+  orig: 44, 44
+  offset: 0, 0
+  index: -1
+default-window
+  rotate: false
+  xy: 482, 264
+  size: 27, 29
+  split: 4, 3, 20, 3
+  orig: 27, 29
+  offset: 0, 0
+  index: -1
+default-select
+  rotate: false
+  xy: 47, 81
+  size: 27, 20
+  split: 4, 14, 4, 4
+  orig: 27, 20
+  offset: 0, 0
+  index: -1
+default-round-large
+  rotate: false
+  xy: 257, 114
+  size: 20, 20
+  split: 5, 5, 5, 4
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+default-round-down
+  rotate: false
+  xy: 303, 160
+  size: 12, 20
+  split: 5, 5, 5, 4
+  orig: 12, 20
+  offset: 0, 0
+  index: -1
+default-round
+  rotate: false
+  xy: 515, 428
+  size: 12, 20
+  split: 5, 5, 5, 4
+  pad: 4, 4, 1, 1
+  orig: 12, 20
+  offset: 0, 0
+  index: -1
+check-off
+  rotate: false
+  xy: 561, 480
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+textfield
+  rotate: false
+  xy: 561, 480
+  size: 14, 14
+  split: 3, 3, 3, 3
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+check-on
+  rotate: false
+  xy: 645, 692
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+tree-minus
+  rotate: false
+  xy: 691, 738
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+tree-plus
+  rotate: false
+  xy: 818, 793
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+default-slider-knob
+  rotate: false
+  xy: 436, 183
+  size: 9, 18
+  orig: 9, 18
+  offset: 0, 0
+  index: -1
+default-slider
+  rotate: false
+  xy: 1, 1
+  size: 8, 8
+  split: 2, 2, 2, 2
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+default-pane
+  rotate: false
+  xy: 772, 758
+  size: 5, 3
+  split: 1, 1, 1, 1
+  orig: 5, 3
+  offset: 0, 0
+  index: -1
+default-rect-pad
+  rotate: false
+  xy: 772, 758
+  size: 5, 3
+  split: 1, 1, 1, 1
+  orig: 5, 3
+  offset: 0, 0
+  index: -1
+default-splitpane-vertical
+  rotate: false
+  xy: 482, 257
+  size: 3, 5
+  split: 0, 0, 0, 5
+  orig: 3, 5
+  offset: 0, 0
+  index: -1
+default-splitpane
+  rotate: false
+  xy: 47, 76
+  size: 5, 3
+  split: 0, 5, 0, 0
+  orig: 5, 3
+  offset: 0, 0
+  index: -1
+cursor
+  rotate: false
+  xy: 76, 98
+  size: 3, 3
+  split: 1, 1, 1, 1
+  orig: 3, 3
+  offset: 0, 0
+  index: -1
+default-rect-down
+  rotate: false
+  xy: 257, 109
+  size: 3, 3
+  split: 1, 1, 1, 1
+  orig: 3, 3
+  offset: 0, 0
+  index: -1
+default-rect
+  rotate: false
+  xy: 279, 131
+  size: 3, 3
+  split: 1, 1, 1, 1
+  orig: 3, 3
+  offset: 0, 0
+  index: -1
+default-select-selection
+  rotate: false
+  xy: 303, 155
+  size: 3, 3
+  split: 1, 1, 1, 1
+  orig: 3, 3
+  offset: 0, 0
+  index: -1
+default-pane-noborder
+  rotate: false
+  xy: 642, 548
+  size: 1, 1
+  split: 0, 0, 0, 0
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+selection
+  rotate: false
+  xy: 511, 292
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+white
+  rotate: false
+  xy: 317, 179
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
