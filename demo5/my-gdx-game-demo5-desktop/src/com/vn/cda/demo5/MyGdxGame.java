@@ -32,6 +32,7 @@ import com.vn.cda.demo5.utils.Driections;
 
 public class MyGdxGame implements ApplicationListener {
 	
+	
 	Skin skin;
 	Stage stage;
 	Label labelScreenTimes;
@@ -41,7 +42,7 @@ public class MyGdxGame implements ApplicationListener {
 	// Screen second counter (1 second tick)
 	private float startTime = System.nanoTime();
 	private float secondsTime = 0;
-	
+	private boolean ispass=true;
 	
 	
 	TiledMap tiledMap;
@@ -59,18 +60,23 @@ public class MyGdxGame implements ApplicationListener {
 	String mapname="demo5";
 	
 	TextureRegion food2;
-	
+	Texture texture;
 	/*
 	 * Pacman
 	 */
 	Pacman pacman;
+	
+	private boolean moveable=true;
+	
+	
+	
 	@Override
 	public void create() {		
 		/*
 		 * Food2
 		 */
-		Texture texture = new Texture(Gdx.files.internal("data/food2.png"));
-		food2=new TextureRegion(texture, 32, 32);
+		texture = new Texture(Gdx.files.internal("data/food2.png"));
+		food2 = new TextureRegion(texture, 32, 32);
 		/*
 		 * Map
 		 */
@@ -80,7 +86,7 @@ public class MyGdxGame implements ApplicationListener {
 		tileAtlas=new TileAtlas(tiledMap, pathHandle);
 		tileMapRenderer=new TileMapRenderer(tiledMap, tileAtlas, 10, 10);
 		
-		tiledMap.layers.remove(1); 
+//		tiledMap.layers.remove(1); 
 		
 		//Duyệt tất cả các GroupLayer (ở ví dụ tạo map trên - ta chỉ có một).
 		for (int i = 0; i < tiledMap.objectGroups.size(); i++)
@@ -158,6 +164,7 @@ public class MyGdxGame implements ApplicationListener {
     	
     	pacman=new Pacman(384,32);
     	pacman.setStand(true);
+    	nopassLayer=tiledMap.layers.get(1);
     	
 	}
 
@@ -188,19 +195,33 @@ public class MyGdxGame implements ApplicationListener {
         
         //Pacman
         pacman.Walking(Gdx.graphics.getDeltaTime(), batch);
+        //Test di chuyen len tren
+		int row=(480-pacman.getPositionY())/32-1;
+		Gdx.app.log("row", "="+row);
+		int col=(800- pacman.getPositionX())/32-1;
+		Gdx.app.log("col", "="+col);
+		String proper = tiledMap.getTileProperty(nopassLayer.tiles[12][12], "nopass");
+		if("true".equals(proper)){
+			ispass=false;
+		}
+		if(!ispass){
+			pacman.setStand(true);
+		}
 	}
 
 	@Override
 	public void resize(int width, int height) {
 		stage.setViewport(BaseScreen.VIEWPORT_WIDTH, BaseScreen.VIEWPORT_HEIGHT, true);
 	}
-
+	
 	@Override
 	public void pause() {
+		
 	}
 
 	@Override
 	public void resume() {
+		
 	}
 	
 	
@@ -213,10 +234,12 @@ public class MyGdxGame implements ApplicationListener {
 				// TODO Auto-generated method stub
 				MyTextButton bt=(MyTextButton)event.getListenerActor();
 				Gdx.app.log("Button", ""+bt.getDirection());
-				pacman.setDirection(bt.getDirection());
-				pacman.setStand(false);
-				return super.touchDown(event, x, y, pointer, button);
 				
+					pacman.setDirection(bt.getDirection());
+				if(ispass){
+					pacman.setStand(false);
+				}
+				return super.touchDown(event, x, y, pointer, button);
 			}
 
 			@Override

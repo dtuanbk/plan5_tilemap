@@ -206,4 +206,7 @@ public class Pacman {
 	public int getPositionX(){
 		return this.x;
 	}
+	public int getPositionY(){
+		return this.y;
+	}
 }
